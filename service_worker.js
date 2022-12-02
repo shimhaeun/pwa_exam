@@ -16,3 +16,7 @@ self.addEventListener("install", pEvent => {
         })
     );
 });
+// 고유 번호 할당받은 서비스 워커 동작 시작
+self.addEventListener('active', pEvent => {
+    console.log('서비스워커 동작 시작됨!');
+});
